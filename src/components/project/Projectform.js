@@ -16,7 +16,7 @@ function ProjectForm({btnText, projectData, handleSubmit})
         method: "GET", 
         headers: {"Content-Type" : 'application/json'}
     
-    }).then(promise => {
+    }).then((promise) => {
         promise.json()
         .then(data => 
             {
@@ -24,7 +24,7 @@ function ProjectForm({btnText, projectData, handleSubmit})
               
             })
         })
-        .catch(error => {
+        .catch((error) => {
             console.log("Erro : " + error.message)
         });
 
