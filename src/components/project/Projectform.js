@@ -21,7 +21,7 @@ function ProjectForm({btnText, projectData, handleSubmit})
         .then(data => 
             {
                 setCategories(data);
-              
+        
             })
         })
         .catch((error) => {
