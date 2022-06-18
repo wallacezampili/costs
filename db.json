@@ -1,19 +1,19 @@
 {
   "projects": [
     {
-      "name": "Projeto pika",
-      "budget": "99999999999999999",
+      "name": "Destruição do universo",
+      "budget": "5000",
       "category": {
-        "id": "1",
-        "name": "Infraestrutura"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 1
     },
     {
-      "name": "Juramento ao cavaleiro da destruicao",
-      "budget": "-10",
+      "name": "wallace",
+      "budget": "1",
       "category": {
         "id": "1",
         "name": "Infraestrutura"
@@ -23,36 +23,15 @@
       "id": 2
     },
     {
+      "name": "Wallace",
+      "budget": "123",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "name": "123",
-      "budget": "123333",
       "cost": 0,
       "services": [],
       "id": 3
-    },
-    {
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "name": "a",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "name": "d",
-      "budget": "1",
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [

@@ -12,6 +12,7 @@ function Input({name, type, placeholder, text, value, handleOnchange})
                 id={name}
                 onChange={handleOnchange}
                 value={value}
+                min='0'
             />
         </div>
     )
