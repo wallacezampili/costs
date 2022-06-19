@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Destruição do universo",
-      "budget": "5000",
+      "budget": "25000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -10,28 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "wallace",
-      "budget": "1",
-      "category": {
-        "id": "1",
-        "name": "Infraestrutura"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Wallace",
-      "budget": "123",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
     }
   ],
   "categories": [

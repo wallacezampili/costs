@@ -13,7 +13,8 @@ function Projects(){
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true)
     const location = useLocation();
-    let message = '';
+    const [projectMessage, setProjectMessage] = useState()
+    let message = ''
 
     if(location.state)
     {
@@ -55,7 +56,7 @@ function Projects(){
             
             let newProjects = projects.filter((project) => project.id != id)
             setProjects(newProjects)
-            location.state.message = 'Projeto removido com sucesso'
+            setProjectMessage("Projeto Removido com sucesso!")
             
         })}).catch(err => {console.log("Erro : " + err.message)})
     }
@@ -66,6 +67,7 @@ function Projects(){
                 <LinkButton to="/newproject" text="Criar Projeto"/>
             </div>
             {message && (<Message text={message} type="success"/>)}
+            {projectMessage && (<Message text={projectMessage} type="success"/>)}
             <Container customClass="start">
                {projects.length > 0 && 
                     projects.map((item) => (<ProjectCard name={item.name} key={item.id} category={item.category.name} id={item.id} budget={item.budget} handleRemove={removeProject}/>))

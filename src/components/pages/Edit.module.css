@@ -1,0 +1,49 @@
+.edit_container
+{
+    padding: 2em;
+}
+.edit_container h1, .edit_container h2, .edit_container p
+{
+    margin-bottom: 0.5em;
+}
+.edit_container h1
+{
+    background-color: #222;
+    color: #FFBB33;
+    padding: 0.4em;
+}
+.details_container, .services_container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #7a7a7a;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+
+}
+.details_container span
+{
+    font-weight: bold;
+}
+.btn
+{
+    background-color: #222;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: 0.5;
+    flex-grow: 0px;
+    text-align: center;
+    cursor: pointer;
+    max-height: 40px;
+    border: none;
+}
+.btn:hover
+{
+    color: #FFBB33;
+}
+.info 
+{
+    width: 100%;
+}
