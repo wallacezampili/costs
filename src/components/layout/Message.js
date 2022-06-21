@@ -2,7 +2,7 @@ import styles from './Message.module.css'
 import {useEffect, useState} from 'react';
 
 
-function Message({type, text})
+function Message({type, text, destroy})
 {
     const [visible, setVisibility] = useState();
 
@@ -17,7 +17,10 @@ function Message({type, text})
         setVisibility(true)
         const timer = setTimeout(() => {
             setVisibility(false)
-            
+            if(destroy)
+            {
+                destroy()
+            }
         }, 3000)
 
         return () => {clearTimeout(timer)}

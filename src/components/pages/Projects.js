@@ -21,7 +21,10 @@ function Projects(){
         message = location.state.message
     }
 
-    
+    function scrollup()
+    {
+        window.scrollTo(0, 0);
+    }
 
     useEffect(() => 
     {
@@ -43,7 +46,16 @@ function Projects(){
         })}, 500);
        
     }, [])
-
+    function destroy()
+    {
+        if(projectMessage == '')
+        {
+        
+            return;
+        }
+        
+        setProjectMessage('');
+    }
     function removeProject(id)
     {
         fetch(`http://localhost:5000/projects/${id}`, {
@@ -57,6 +69,8 @@ function Projects(){
             let newProjects = projects.filter((project) => project.id != id)
             setProjects(newProjects)
             setProjectMessage("Projeto Removido com sucesso!")
+            scrollup();
+            
             
         })}).catch(err => {console.log("Erro : " + err.message)})
     }
@@ -66,11 +80,15 @@ function Projects(){
                 <h1>Projetos</h1>
                 <LinkButton to="/newproject" text="Criar Projeto"/>
             </div>
-            {message && (<Message text={message} type="success"/>)}
-            {projectMessage && (<Message text={projectMessage} type="success"/>)}
+            {message && (<Message text={message} type="success" destroy={destroy}/>)}
+            {projectMessage && (<Message text={projectMessage} type="success" destroy={destroy}/>)}
             <Container customClass="start">
-               {projects.length > 0 && 
+               {projects.length > 0 ? (                    
+                
                     projects.map((item) => (<ProjectCard name={item.name} key={item.id} category={item.category.name} id={item.id} budget={item.budget} handleRemove={removeProject}/>))
+                ) : (
+                    <p>Não há projetos registrados</p>
+                )
                }
                {loading && (
                 <Loading/>

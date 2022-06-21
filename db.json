@@ -2,13 +2,20 @@
   "projects": [
     {
       "name": "Destruição do universo",
-      "budget": "25000",
+      "budget": "10",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infraestrutura"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 10,
+      "services": [
+        {
+          "name": "wallace",
+          "cost": "10",
+          "description": "aaaaa",
+          "id": "0f475201-84ca-4099-8f69-7eb34ab4199f"
+        }
+      ],
       "id": 1
     }
   ],
