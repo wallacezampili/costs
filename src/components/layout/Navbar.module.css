@@ -12,6 +12,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
+    display: none;
 }
 .item
 {
@@ -26,3 +27,88 @@
 {
     color: #FFBB33
 }
+.list_mobile
+{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_mobile svg
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.mobile_menu_container
+{
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    justify-content: center;
+    right: 0;
+    top: 80px;
+    justify-self: flex-end;
+
+    background-color: #222;
+    padding: 3em 3.5em;
+    
+}
+.mobile_menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+}
+.item_mobile
+{
+    margin: 0.5em 0;
+}
+.item_mobile a 
+{
+    color: #fff;
+    text-decoration: none;
+}
+.item_mobile a:hover
+{
+    color: #FFBB33;
+}
+.scale_up_top {
+	-webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+	animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
+}
+.scale_down_top {
+	-webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both reverse;
+	animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both reverse;
+}
+ @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  
