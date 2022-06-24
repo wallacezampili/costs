@@ -48,7 +48,7 @@ function Projects(){
     }, [])
     function destroy()
     {
-        if(projectMessage == '')
+        if(projectMessage === '')
         {
         
             return;

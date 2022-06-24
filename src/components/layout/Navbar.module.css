@@ -4,7 +4,8 @@
     justify-content: space-between;
     background-color: #222;
     padding: 1em;
-   
+    
+    
 }
 .list
 {
@@ -12,7 +13,7 @@
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    display: none;
+   
 }
 .item
 {
@@ -30,9 +31,9 @@
 .list_mobile
 {
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .list_mobile svg
 {
@@ -111,4 +112,32 @@
               transform-origin: 50% 0%;
     }
   }
-  
+  @media screen and (max-width: 1050px) 
+  {
+    .navbar{
+        width: 100%;
+    }  
+  }
+  @media screen and (max-width: 700px) 
+  {
+    .navbar{
+        width: 100%;
+    }
+    .list{
+        display: none;
+    }
+    .list_mobile
+    {
+        display: flex;
+    }
+    }
+ @media screen and (max-width: 550px) {
+
+    .list{
+        display: none;
+    }
+    .list_mobile
+    {
+        display: flex;
+    }
+}
